@@ -1,0 +1,113 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap');
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: rgb(170, 206, 247);
+    color: rgb(133, 133, 133);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.content {
+    width: 90%;
+    height: 65vh;
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-gradient {
+    position: relative;
+    left: 0;
+    width: 11%;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+    margin-left: 20px;
+    border-radius: 3px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.card-gradient:hover {
+    -webkit-box-shadow: 0px 0px 11px 1px #FFF1EB; 
+    box-shadow: 0px 0px 11px 1px #FFF1EB;
+}
+
+.card {
+    position: relative;
+    width: 98%;
+    height: 27.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    background-size: 100%;
+    transition: 0.3s all;
+    color: rgb(133, 133, 133);
+}
+
+.card:hover {
+    margin-bottom: 8%;
+}
+
+.card span {
+    position: absolute;
+}
+
+
+.back-card {
+    position: absolute;
+    width: 98%;
+    height: 27.5vh;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 190, 211);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.3s all;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.heroes-imgs {
+    width: 50px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1360px){
+    .card-gradient {
+        width: 150px;
+        margin-top: 20px;
+    }
+}
+
